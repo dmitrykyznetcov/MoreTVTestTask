@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">MoreTVTestTask</string>
+
+    <string name="event_list_loading">Загрузка...</string>
+    <string name="event_list_count">Элементов в списке: %s</string>
+
+    <string name="item_event_header">Событие: %s</string>
+    <string name="item_event_description">Мероприятие проходит с: %1$s по %2$s</string>
+
+    <string name="item_notice_date">Дата вылета: %s</string>
+    <string name="item_notice_gate">Выход: %s</string>
+
+    <string name="item_move_route_from">Старт: %s</string>
+    <string name="item_move_route_to">Финиш: %s</string>
+    <string name="item_move_estimate_time">Время в пути: %s минут</string>
+
+    <string name="events_get_error">Ошибка при получении списка событий</string>
+    <string name="event_container_error">Ошибка при получении информации о событии.</string>
+
+</resources>

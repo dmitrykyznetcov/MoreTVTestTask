@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+
+    <data>
+
+        <variable
+            name="item"
+            type="ru.dmitrykuznetsov.testtask.presentation.feature.events.model.MoveItem"
+            />
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_selectable_white"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/tv_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="16dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="4dp"
+            android:text="Маршрут"
+            android:textSize="18sp"
+            />
+
+        <TextView
+            android:id="@+id/tv_route_from"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="16dp"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:textSize="14sp"
+            android:text="@{@string/item_move_route_from(item.fromPlace)}"
+            tools:text="Старт: кинотеатр"
+            />
+
+        <TextView
+            android:id="@+id/tv_route_to"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="16dp"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:textSize="14sp"
+            android:text="@{@string/item_move_route_to(item.toPlace)}"
+            tools:text="Финиш: Дом"
+            />
+
+        <TextView
+            android:id="@+id/tv_estimate_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="16dp"
+            android:paddingTop="4dp"
+            android:paddingBottom="8dp"
+            android:textSize="14sp"
+            android:text="@{@string/item_move_estimate_time(item.estimateTime.toString())}"
+            tools:text="Время в пути: 50.5 минут"
+            />
+
+    </LinearLayout>
+
+</layout>
